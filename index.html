@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+   
     <link rel="stylesheet" href="">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">;
+     <link rel="stylesheet" href="style.css">
     <title>AluraBooks</title>
 </head>
 
@@ -102,7 +104,64 @@
                 <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritas"></li>
                 <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho de compras"></li>
      </ul>
-    
+     <a href="#" class="botões__ancora">Saiba mais</a>
+         </div>
+    </div>
+
+  <section class="carrossel">
+             <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+
+        <div class="swiper">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka"></div>
+          <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre Liderança"></div>
+          <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
+          <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro sobre Front-end"></div>
+          <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol"></div>
+          <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
         </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        </div>
+
+        </section>
+
+        <script src="https://cdn.jsdelivr.next/npm/swiper@9/swiper-bundle.mun.js"></script>
+
+        <script> 
+        const swiper1 = new Swiper(' .swiper' , { 
+            spaceBetween: 10,
+            slidesPerView: 3, 
+            pagination:{
+            el:'.swiper-pagination',
+            type: 'bullets',
+            },
+        });
+        </script>
+
+    <div class="card">
+       
+        <div class="card__descrição">
+            <div class="descriçaõ">
+                <h3 class="descrição__titlo">Talvez você se interesse por...</h3>
+                <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+                <p class="descrição__texto">Construindo uma aplicação integrada com a plataforma Google.</p>
+            </div>
+            <img src="img/" class="descrição__imagem">
+            </div>
+
+         <div class="card__botões">
+            <ul class="botões">
+                <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritas"></li>
+                <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho de compras"></li>
+     </ul>
+     <a href="#" class="botões__ancora">Saiba mais</a>
+         </div>
+    </div>
+
  </body>
 </html>
